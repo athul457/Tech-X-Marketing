@@ -72,31 +72,31 @@ export default function Home() {
               </div>
               {/* grids */}
               <div className="grid grid-cols-4  gap-2 items-center justify-center mt-5 mb-10">
-                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md ">
-                  <h1 className="text-3xl font-bold">19M</h1>
+                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:bg-gray-400 transform translate duration-300 ease-in-out delay-150">
+                  <h1 className="text-3xl font-bold text-blue-600">19M</h1>
                   <p className="ml-10 mt-2">
                     <span className="ml-7">MONTHLY</span>{" "}
                     <span>CONVERSATIONS</span>
                   </p>
                 </div>
-                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:p-2">
-                  <h1 className="text-3xl font-bold">2M+</h1>
+                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:bg-gray-400 transform translate duration-300 ease-in-out delay-150">
+                  <h1 className="text-3xl font-bold text-blue-600">2M+</h1>
                   <p className="mt-2">
                     <span>BUSINESSES</span>
                     <br />
                     <span className="ml-2">POWERED</span>
                   </p>
                 </div>
-                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:p-2">
-                  <h1 className="text-3xl font-bold">1.37B</h1>
+                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:bg-gray-400 transform translate duration-300 ease-in-out delay-150">
+                  <h1 className="text-3xl font-bold text-blue-600">1.37B</h1>
                   <p className="mt-2">
                     <span>MONTHLY</span>
                     <br />
                     <span>MESSAGES</span>
                   </p>
                 </div>
-                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:p-2">
-                  <h1 className="text-3xl font-bold">194M</h1>
+                <div className="bg-gray-300 flex flex-col items-center justify-center w-[200px] h-[150px] rounded-md hover:bg-gray-400 transform translate duration-300 ease-in-out delay-150">
+                  <h1 className="text-3xl font-bold text-blue-600">194M</h1>
                   <p className="mt-2">
                     <span>MONTHLY</span>
                     <br />
@@ -110,7 +110,7 @@ export default function Home() {
       </div>
 
       {/* TechX-Marketing: Everything
-            You Need To Succeed */}
+You Need To Succeed */}
 
       <div className="  mt-140 ">
         <div className="ml-110 ">
