@@ -173,7 +173,7 @@ You Need To Succeed */}
       {/* customer support */}
 
       <section className=" bg-gray-100 text-black h-[300px]">
-        <div className="flex items-center justify-center w-[98%] bg-gray-300 p-3 rounded-2xl relative bottom-40">
+        <div className="flex items-center justify-center w-[98%] bg-gray-300 p-3 rounded-2xl relative bottom-40 ml-3 shadow-lg shadow-gray-800">
           <div className="flex items-center justify-center w-[600px] p-3 ">
             <img
               src="https://images.pexels.com/photos/8867439/pexels-photo-8867439.jpeg?auto=compress&cs=tinysrgb&w=1200"
