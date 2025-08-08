@@ -57,17 +57,14 @@ export default function Feature1() {
 function List({ feature, naviGate }) {
   return (
     <div className="bg-white flex flex-col items-center justify-center rounded-xl shadow-lg p-4 w-[500px] h-[450px] opacity-80 hover:opacity-100 duration-300 delay-200 ease-in-out hover:shadow-lg hover:shadow-gray-900 text-justify">
-      {/* Title */}
       <div className="text-2xl font-semibold text-gray-800 mb-2 ">
         {feature.title}
       </div>
 
-      {/* Description */}
       <div className=" text-gray-700 rounded-md p-3 mb-4">
         {feature.description}
       </div>
 
-      {/* Image */}
       <div className="w-full h-[200px] overflow-hidden rounded-md mb-4">
         <img
           src={feature.image}
@@ -76,7 +73,6 @@ function List({ feature, naviGate }) {
         />
       </div>
 
-      {/* Button */}
       <button
         className="bg-yellow-400 text-white py-2 px-4 rounded hover:bg-yellow-600 opacity-100"
         onClick={() => naviGate(feature.route)}
