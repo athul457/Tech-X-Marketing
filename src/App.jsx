@@ -5,9 +5,13 @@ import Header from "./components/Header";
 
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Features from "./pages/Features";
 import Feature1 from "./pages/Feature1";
 import Feature2 from "./pages/Feature2";
+import Feature3 from "./pages/Feature3";
+import Feature4 from "./pages/Feature4";
 import Landing from "./pages/Landing";
+import TopFooter from "./components/TopFooter";
 import { useEffect, useState } from "react";
 
 export default function App() {
@@ -15,7 +19,15 @@ export default function App() {
   const [hideFooter, setHideFooter] = useState(true);
 
   useEffect(() => {
-    const hideFooters = ["/contact", "/feature1", "/feature2", "/landing"];
+    const hideFooters = [
+      "/contact",
+      "/features",
+      "/features/feature-1",
+      "/features/feature-2",
+      "/features/feature-3",
+      "/features/feature-4",
+      "/landing",
+    ];
     setHideFooter(!hideFooters.includes(location.pathname));
   }, [location]);
   return (
@@ -25,11 +37,15 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/features/Feature1" element={<Feature1 />} />
-          <Route path="/features/Feature2" element={<Feature2 />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/features/feature-1" element={<Feature1 />} />
+          <Route path="/features/feature-2" element={<Feature2 />} />
+          <Route path="/features/feature-3" element={<Feature3 />} />
+          <Route path="/features/feature-4" element={<Feature4 />} />
           <Route path="/landing" element={<Landing />} />
         </Routes>
       </main>
+      {hideFooter && <TopFooter />}
       {hideFooter && <Footer />}
     </div>
   );
