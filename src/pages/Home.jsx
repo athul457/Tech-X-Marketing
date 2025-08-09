@@ -1,4 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 export default function Home() {
+  const navigator = useNavigate();
+
+  const awards = [
+    "/images/award1.jpg",
+    "/images/award2.jpg",
+    "/images/award3.jpg",
+    "/images/award4.jpg",
+    "/images/award5.jpg",
+    "/images/award6.jpg",
+    "/images/award7.jpg",
+  ];
   return (
     <main className="overflow-x-hidden relative">
       {/* top header */}
@@ -32,20 +45,20 @@ export default function Home() {
         </div>
       </header>
 
-      {/* OVERLAY div*/}
+      {/* ---------- awards section ---------------- */}
       <div className="absolute left-[23px]   w-[97%] top-150 z-10 text-black">
         <div className="  bg-gray-200 bg-opacity-70  flex flex-col  font-semibold rounded-3xl shadow-xl">
           <div className="mt-10 flex justify-center items-center">
             <h1 className="text-black text-xl">AWARDS</h1>
           </div>
-          <div className="flex flex-wrap justify-around mt-15">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-              <div
-                key={num}
-                className="w-[100px] h-[100px] border-2 flex justify-center items-center rounded-lg shadow-md"
-              >
-                {num}
-              </div>
+          <div className="flex flex-wrap justify-around mt-15 mb-8">
+            {awards.map((src, index) => (
+              <img
+                key={index}
+                src={src}
+                alt="images"
+                className="w-[100px] h-[100px]  flex justify-center items-center rounded-lg "
+              ></img>
             ))}
           </div>
 
@@ -109,8 +122,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* TechX-Marketing: Everything
-You Need To Succeed */}
+      {/* ------------------- TechX-Marketing: Everything You Need To Succeed ------------ */}
 
       <div className="  mt-140 ">
         <div className="ml-110 ">
@@ -170,7 +182,7 @@ You Need To Succeed */}
         </div>
       </div>
 
-      {/* customer support */}
+      {/* ---------------customer support ------------------*/}
 
       <section className=" bg-gray-100 text-black h-[300px]">
         <div className="flex items-center justify-center w-[98%] bg-gray-300 p-3 rounded-2xl relative bottom-40 ml-3 shadow-lg shadow-gray-800">
@@ -222,6 +234,45 @@ You Need To Succeed */}
           </div>
         </div>
       </section>
+
+      {/* <------------------ pricing section -------------> */}
+
+      <div className="bg-gray-100 text-black flex flex-col items-center justify-center ">
+        <div className="mt-10">
+          <h1 className="text-4xl text-yellow-500 font-bold uppercase">
+            pricing
+          </h1>
+          <p className="text-xl text-blue-500 mt-3">
+            we mainly provide 2 plans
+          </p>
+        </div>
+
+        <div className="flex gap-10 mt-5">
+          <div className="bg-blue-100 p-10 rounded-lg flex flex-col items-center justify-center">
+            <div className="text-2xl font-bold text-blue-600 ml-3 ">
+              starter
+            </div>
+            <div className="text-2xl font-bold text-blue-600 ">$97</div>
+            <div className="bg-blue-500 mt-5 p-2 rounded-lg">USD Per Month</div>
+          </div>
+          <div className="bg-blue-950 p-10 rounded-lg flex flex-col items-center justify-center">
+            <div className="text-2xl font-bold text-yellow-500">Unlimited</div>
+            <div className="text-2xl font-bold text-yellow-500 ">$297</div>
+            <div className="p-2 mt-5 bg-yellow-500 rounded-lg">
+              USD Per Month
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-7 mb-5">
+          <button
+            className="bg-blue-400 p-3 rounded-lg text-xl font-bold hover:bg-blue-600"
+            onClick={() => navigator("/pricing")}
+          >
+            view more
+          </button>
+        </div>
+      </div>
     </main>
   );
 }

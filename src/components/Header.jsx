@@ -29,10 +29,10 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/landing"
+          to="/pricing"
           className="hover:text-yellow-400  duration-300 transform translate ease-in-out delay-150"
         >
-          Landing
+          Pricing
         </Link>
       </nav>
     </div>

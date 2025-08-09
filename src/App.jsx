@@ -10,7 +10,7 @@ import Feature1 from "./pages/Feature1";
 import Feature2 from "./pages/Feature2";
 import Feature3 from "./pages/Feature3";
 import Feature4 from "./pages/Feature4";
-import Landing from "./pages/Landing";
+import Pricing from "./pages/Pricing";
 import TopFooter from "./components/TopFooter";
 import { useEffect, useState } from "react";
 
@@ -26,7 +26,7 @@ export default function App() {
       "/features/feature-2",
       "/features/feature-3",
       "/features/feature-4",
-      "/landing",
+      "/pricing",
     ];
     setHideFooter(!hideFooters.includes(location.pathname));
   }, [location]);
@@ -42,7 +42,7 @@ export default function App() {
           <Route path="/features/feature-2" element={<Feature2 />} />
           <Route path="/features/feature-3" element={<Feature3 />} />
           <Route path="/features/feature-4" element={<Feature4 />} />
-          <Route path="/landing" element={<Landing />} />
+          <Route path="/pricing" element={<Pricing />} />
         </Routes>
       </main>
       {hideFooter && <TopFooter />}

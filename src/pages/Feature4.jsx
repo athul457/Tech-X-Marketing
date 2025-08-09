@@ -7,7 +7,7 @@ export default function Feature4() {
     <div className="min-h-screen bg-gray-950 text-white px-6 py-12 md:px-20 mt-20">
       {/* Title */}
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-6">
-        🛡️ Enterprise-Grade Security
+        Enterprise-Grade Security
       </h1>
 
       {/* Image */}

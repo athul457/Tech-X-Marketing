@@ -1,9 +1,9 @@
 export default function Contact() {
   return (
-    <div className="w-screen  bg-gray-300  flex flex-col items-center justify-center">
+    <div className="w-screen  bg-gray-100  flex flex-col items-center justify-center">
       <form
         action=""
-        className="p-10 bg-gray-300 mt-35 w-[500px] h-[650px] rounded-lg text-black shadow-md shadow-gray-500"
+        className="p-10 bg-blue-100 mt-23 w-[500px] h-[650px] rounded-lg text-black shadow-md shadow-gray-500"
       >
         <h1 className="text-2xl font-bold ml-35 text-yellow-500 uppercase">
           contact as

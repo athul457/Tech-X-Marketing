@@ -41,7 +41,7 @@ export default function Feature1() {
   ];
 
   return (
-    <div className="w-screen min-h-screen p-10  flex flex-col items-center justify-center mt-18 bg-gray-300">
+    <div className="w-screen min-h-screen p-10  flex flex-col items-center justify-center mt-18 bg-gray-100">
       <h1 className="text-3xl font-bold capitalize text-blue-600">
         These are our main features
       </h1>
